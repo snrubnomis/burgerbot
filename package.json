@@ -1,0 +1,19 @@
+{
+	"name": "burgerbot",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "4.13.x",
+		"body-parser": "1.17.1",
+		"cfenv": "1.0.x",
+    "dotenv": "^2.0.0",
+		"watson-developer-cloud" : "2.8.2"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	}
+}
