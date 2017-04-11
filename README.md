@@ -8,46 +8,46 @@ This bot consists of 3 parts: the front-end (which runs in your browser), the ba
 
 ## Sign up to Bluemix
 1. Go to [Bluemix](console.ng.bluemix.net)
-+ Create an account
+2. Create an account
 
 ## Create Watson Conversation service
 1. Log in to [Bluemix](console.ng.bluemix.net)
-+ Navigate to the "Catalog"
-+ Find the Watson services
-+ Click on "Conversation"
-+ Click "Create" to create your own instance of the Conversation service
+2. Navigate to the "Catalog"
+3. Find the Watson services
+4. Click on "Conversation"
+5. Click "Create" to create your own instance of the Conversation service
 
 ## Train Watson
 1. From the Conversation service on Bluemix, click "Launch tool". This will take you to the Conversation tooling where you can train your bot
-+ Select the upload button on the "Workspaces" page
-+ Select "Choose a file" and select "workspace-burgerbot" from this app
-+ This will load and open this workspace
-+ Navigate back to the "Workspaces" page and click the 3 dots on your workspace tile, and select "View details"
-+ Note down the workspace ID for later
+2. Select the upload button on the "Workspaces" page
+3. Select "Choose a file" and select "workspace-burgerbot" from this app
+4. This will load and open this workspace
+5. Navigate back to the "Workspaces" page and click the 3 dots on your workspace tile, and select "View details"
+6. Note down the workspace ID for later
 
 ## Get the Burger Bot application
 1. Clone or download this app from [GitHub](https://github.com/snrubnomis/burgerbot)
 
 ## Configure application
 1. Go to your Conversation service on Bluemix (via the "Dashboard")
-+ Navigate to "Service Credentials" and click "View credentials"
-+ Use the username and password here to update CONVERSATION_USERNAME and CONVERSATION_PASSWORD in the .env file in the app
-+ Use the workspace ID we got earlier to update WORKSPACE_ID in the .env file
+2. Navigate to "Service Credentials" and click "View credentials"
+3. Use the username and password here to update CONVERSATION_USERNAME and CONVERSATION_PASSWORD in the .env file in the app
+4. Use the workspace ID we got earlier to update WORKSPACE_ID in the .env file
 
 ## Run the app locally
 1. [Install Node.js](https://nodejs.org)
-+ Open Terminal or Command Prompt
-+ cd into this project's root directory
-+ Run `npm install` to install the app's dependencies
-+ Run `npm start` to start the app
-+ Access the running app in a browser at <http://localhost:6008>
+2. Open Terminal or Command Prompt
+3. cd into this project's root directory
+4. Run `npm install` to install the app's dependencies
+5. Run `npm start` to start the app
+6. Access the running app in a browser at <http://localhost:6008>
 
 ## Run the app on Bluemix
 1. Log in to [Bluemix](console.ng.bluemix.net)
-+ Navigate to the "Catalog"
-+ Find "Cloud Foundry Apps"
-+ Select "SDK for Node.js"
-+ Provide a name for your app
-+ Click "Create"
-+ Modify "manifest.yml" to use your app's name
-+ Follow the "Getting Started" instructions in your app on Bluemix to deploy this app
+2. Navigate to the "Catalog"
+3. Find "Cloud Foundry Apps"
+4. Select "SDK for Node.js"
+5. Provide a name for your app
+6. Click "Create"
+7. Modify "manifest.yml" to use your app's name
+8. Follow the "Getting Started" instructions in your app on Bluemix to deploy this app
